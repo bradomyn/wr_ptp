@@ -124,9 +124,9 @@ PtpPortDS * ptpdStartup(int argc, char **argv, Integer16 *ret, RunTimeOpts *rtOp
   "-1 NAME           WR: network interface for port 1\n"
   "-2 NAME           WR: network interface for port 2\n"
   "-3 NAME           WR: network interface for port 3\n"
-  "-e2e              WR: run PTP as End to End Transparent Clock\n"
-  "-p2p              WR: run PTP as Peer to Peer Transparent Clock\n"
-  "-bcp              WR: run PTP as Boundary Clock with Peer to peer\n"
+  "-x              WR: run PTP as End to End Transparent Clock\n"
+  "-y              WR: run PTP as Peer to Peer Transparent Clock\n"
+  "-z              WR: run PTP as Boundary Clock with Peer to peer\n"
 
 "\n"
 //"-k NUMBER,NUMBER  send a management message of key, record, then exit\n"  implemented later..

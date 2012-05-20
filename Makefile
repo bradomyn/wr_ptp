@@ -11,8 +11,6 @@ OBJDUMP         = $(CROSS_COMPILE)objdump
 
 #Flags for kind of clocks
 
-CLOCKFLAGS  = TWO_STEP
-#CLOCKFLAGS = PEER_DELAY
 #CLOCKFLAGS = P2P
 #CLOCKFLAGS = E2E
 
