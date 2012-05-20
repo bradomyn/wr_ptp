@@ -262,7 +262,7 @@ PtpPortDS * ptpdStartup(int argc, char **argv, Integer16 *ret, RunTimeOpts *rtOp
       break;
 
    case 'h':
-	   rtOpts->E2E_mode = FALSE;
+       PTPD_TRACE(TRACE_STARTUP, NULL,"Look at option x\n");
 	   break;
 
 
@@ -317,6 +317,7 @@ PtpPortDS * ptpdStartup(int argc, char **argv, Integer16 *ret, RunTimeOpts *rtOp
    
    case 'x':
        PTP_TRACE(TRACE_STARTUP,NULL,"End to End Transparent Clock\n");
+	   rtOpts->E2E_mode         = TRUE;
        rtOpts->portNumber 		= WR_PORT_NUMBER; 
 	   rtOpts->wrConfig 		= WR_MODE_E2E;
 	   rtOpts->autoPortDiscovery 	= TRUE; 
@@ -324,6 +325,7 @@ PtpPortDS * ptpdStartup(int argc, char **argv, Integer16 *ret, RunTimeOpts *rtOp
    case 'y':
 
        PTP_TRACE(TRACE_STARTUP,NULL,"Peer to Peer Transparent Clock\n");
+       rtOpt->P2P_mode          = TRUE;
        rtOpts->portNumber 		= WR_PORT_NUMBER; 
 	   rtOpts->wrConfig 		= WR_MODE_P2P;
 	   rtOpts->autoPortDiscovery 	= TRUE; 
@@ -331,7 +333,8 @@ PtpPortDS * ptpdStartup(int argc, char **argv, Integer16 *ret, RunTimeOpts *rtOp
       break;
    case 'z':
       
-       PTP_TRACE(TRACE_STARTUP,NULL,"Peer to Peer mechanism \n");
+       PTP_TRACE(TRACE_STARTUP,NULL,"Peer Delay mechanism \n");
+       rtOpts->peer_delay       = TRUE
        rtOpts->portNumber 		= WR_PORT_NUMBER; 
 	   rtOpts->wrConfig 		= WR_MODE_P;
 	   rtOpts->autoPortDiscovery 	= TRUE; 
