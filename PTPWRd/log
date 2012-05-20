@@ -1,0 +1,8 @@
+19/05
+#####
+
+- startup.c
+
+switches for executing the daemon as e2e, p2p  and p2p mechanism.
+
+TODO -> Complete the configuration

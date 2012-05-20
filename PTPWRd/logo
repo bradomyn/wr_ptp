@@ -1,0 +1,24 @@
+dep/startup.c
+#############
+
+read the command switches out and set configuration for every kind of clock.
+
+ptpdShutdown() 
+
+PtpPortDS * ptpdStartup()
+
+
+ptpd_exports
+############
+no freaking idea
+
+bmc.c 
+#####
+best master clock algorithm 
+Initialization of a Boundary clock...
+
+
+
+
+
+
