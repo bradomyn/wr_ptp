@@ -64,7 +64,7 @@
 #define NUMBER_PORTS		2
 #define VERSION_PTP		2
 #define TWO_STEP_FLAG		0x02
-#define PEER_DELAY          0x03
+#define PEER_DELAY_FLAG     0x03
 #define SLAVE_ONLY		FALSE
 #define NO_ADJUST		FALSE
 
@@ -275,7 +275,6 @@ enum{
 	WR_MODE_AUTO= 0x4, // only for ptpx - not in the spec
     WR_MODE-E2E = 0x5,
     WR_MODE_P2P = 0x6,
-    WR_MODE_P   = 0x7,
 };
 
 /**
