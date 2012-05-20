@@ -9,6 +9,13 @@ STRIP           = $(CROSS_COMPILE)strip
 OBJCOPY         = $(CROSS_COMPILE)objcopy
 OBJDUMP         = $(CROSS_COMPILE)objdump
 
+#Flags for kind of clocks
+
+CLOCKFLAGS  = TWO_STEP_FLAG
+#CLOCKFLAGS = PEER_DELAY
+#CLOCKFLAGS = P2P
+#CLOCKFLAGS = E2E
+
 # Differentiate between freestanding compilazion (one with no libc)
 # from a complete one. This way, arm and x86 are identified as hosted,
 # while zpu or other minimal processors are identifed as freestanding.

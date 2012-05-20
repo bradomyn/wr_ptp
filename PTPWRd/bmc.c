@@ -96,7 +96,13 @@ void initDataPort(RunTimeOpts *rtOpts, PtpPortDS *ptpPortDS)
 void initDataClock(RunTimeOpts *rtOpts, PtpClockDS *ptpClockDS)
 {
 	/* Default data set */
+
+#ifdef TWO_STEP
 	ptpClockDS->twoStepFlag = TWO_STEP_FLAG;
+#elif PEER_DELAY
+    ptpClockDS->twoStepFlag = PEER_DELAY_FLAG;
+#endif 
+
 	
 	ptpClockDS->numberPorts = rtOpts->portNumber;
 	
