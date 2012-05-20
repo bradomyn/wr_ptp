@@ -34,7 +34,9 @@ RunTimeOpts rtOpts = {
    /**************** White Rabbit *************************/
    .portNumber 		= NUMBER_PORTS,
    .calPeriod     	= WR_DEFAULT_CAL_PERIOD,
-   .E2E_mode 		= TRUE,
+   .peer_delay      = FALSE,
+   .E2E_mode 		= FALSE,
+   .P2P_mode        = FALSE,
    .wrConfig		= WR_MODE_AUTO, //autodetection
    .wrStateRetry	= WR_DEFAULT_STATE_REPEAT,
    .wrStateTimeout	= WR_DEFAULT_STATE_TIMEOUT_MS,
